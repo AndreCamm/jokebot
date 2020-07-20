@@ -65,7 +65,7 @@ const Chat = () => {
     const handleFetch = async () => {
         let newJoke = ""
 
-        await fetch("http://api.icndb.com/jokes/random")
+        await fetch("https://api.icndb.com/jokes/random")
             .then((res) => res.json())
             .then((data) => {
                 if (data.type !== "success") {
